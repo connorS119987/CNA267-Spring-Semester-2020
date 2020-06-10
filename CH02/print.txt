@@ -1,0 +1,32 @@
+#----------------------------------------#
+#     Connor Seemann Seat 23 Lab 2.1     #
+#----------------------------------------#
+
+#Program that returns weekly pay
+print("Program that will return amount you will be payed")
+
+wage = eval( input("Enter the hourly wage: ") )
+regHour = eval( input("Enter the number of regular hours: ") )
+overHour = eval( input("Enther the number of overtime hours: ") )
+
+totalPay = (wage * regHour) + (wage * (overHour * 1.5) )
+
+print("The weekly pay you will recive is:", totalPay)
+
+#----------------------------------------#
+#     Connor Seemann Seat 23 Lab 2.2     #
+#----------------------------------------#
+
+# Will determin the minimum length of runway an aircraft needs to take off
+
+print("This program will determin the minimum length of runway an aircraft needs\n") # Prints introduction statement
+
+v = eval( input("Please enter the take-off speed of the aircraft: ") )  # Obtaining the velocity of the aircraft
+a = eval( input("Please enter the acceleration of the aircraft: ") )    # Obtaining the acceleration of the aircraft
+
+""" Formula for length of runway needed is the following """
+"""                 lenght = ( (v**2) / 2 ) * a          """
+
+length = ( v**2 / (2 * a) )
+
+print("The minimum runway length for this aircraft is", length, "meters.")
